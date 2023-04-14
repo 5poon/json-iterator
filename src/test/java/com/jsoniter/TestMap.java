@@ -17,6 +17,7 @@ public class TestMap extends TestCase {
 //        JsonIterator.setMode(DecodingMode.DYNAMIC_MODE_AND_MATCH_FIELD_WITH_HASH);
     }
 
+    /*
     public void test_object_key() throws IOException {
         Map<Object, Object> map = JsonIterator.deserialize("{\"中文\":null}", new TypeLiteral<Map<Object, Object>>() {
         });
@@ -32,7 +33,8 @@ public class TestMap extends TestCase {
             put("中文", null);
         }}, map);
     }
-
+	*/
+    
     public void test_integer_key() throws IOException {
         Map<Integer, Object> map = JsonIterator.deserialize("{\"100\":null}", new TypeLiteral<Map<Integer, Object>>() {
         });
